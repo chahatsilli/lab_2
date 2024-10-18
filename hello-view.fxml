@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="682.0" prefWidth="887.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab1chahat.HelloController">
+  <padding>
+    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+  </padding>
+  <Button onAction="#onHelloButtonClick" prefHeight="21.0" prefWidth="148.0" text="Feching the Data" />
+   <Label text="ipaintentNmae" />
+   <TableView fx:id="tableView" prefHeight="294.0" prefWidth="698.0">
+     <columns>
+       <TableColumn fx:id="id" prefWidth="75.0" text="id" />
+       <TableColumn fx:id="paintentName" prefWidth="75.0" text="paintentName" />
+         <TableColumn fx:id="phone" prefWidth="75.0" text="phone" />
+         <TableColumn fx:id="payment" prefWidth="75.0" text="payment" />
+     </columns>
+   </TableView>
+   <TextField fx:id="ipaintentName" />
+   <Label text="iphone" />
+   <TextField fx:id="iphone" />
+   <Label text="ipayment" />
+   <TextField fx:id="ipayment" />
+   <Button mnemonicParsing="false" onAction="#loaddata" text="view Data" />
+   <Button mnemonicParsing="false" onAction="#updatedata" text="update" />
+   <Button mnemonicParsing="false" onAction="#deletedata" text="delete" />
+   <Button mnemonicParsing="false" onAction="#insertdata" text="insert" />
+</VBox>
